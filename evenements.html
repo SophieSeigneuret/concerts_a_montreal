@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Concerts à Montréal</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="icon" type="image/gif" href="images/micro.gif"/>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+<header class="wrapper">
+    <a href="index.html"><img src="images/cam_logo.gif" alt="logo Concerts à Montréal" id="logo"/></a>
+
+    <!-- menu de navigation -->
+    <div class="mobile-nav">
+        <!-- menu hamburger -->
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- menu normal -->
+        <div class="responsive-menu">
+            <ul>
+                <li><a href="evenements.html" class="active">événements</a></li>
+                <li><a href="#">salles</a></li>
+                <li><a href="#">réservation</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form action="index.html">
+        <input type="search" name="research" id="research" value="" placeholder="événement, salle, artiste, genre...">
+        <img id="loupe" src="images/loupe.jpg" alt="loupe">
+    </form>
+</header>
+
+<main id="events" class="wrapper">
+    <p><a href="evenements.html">événements</a> > pop - rock</p>
+    <h1>vos concerts pop - rock</h1>
+
+    <div class="row">
+        <!-- menu latéral -->
+        <input type="checkbox" name="menu" id="menu" />
+        <aside class="row col-s-12 col-m-3 col-3">
+            <div>
+                <div id="menu_lateral">
+                    <h2>Genres</h2>
+                    <ul>
+                        <li><a href="evenements.html" class="active2">Pop Rock</a></li>
+                        <li><a href="soul.html">Soul - Funk</a></li>
+                        <li><a href="latino.html">Latino</a></li>
+                        <li><a href="jazz.html">Jazz</a></li>
+                        <li><a href="populaire.html">Populaire</a></li>
+                        <li><a href="evenements.html">RnB</a></li>
+                        <li><a href="evenements.html">Rap - Hip-hop</a></li>
+                        <li><a href="evenements.html">Electro</a></li>
+                    </ul>
+                </div>
+                <label for="menu">>></label>
+            </div>
+        </aside>
+        <!-- END menu latéral -->
+
+        <!-- liste concerts -->
+        <section class="col-s-12 col-m-9 col-9">
+            <!-- concert 1 -->
+            <article>
+                <a href="#"><img src="images/poprock/ShawnMendes.jpg" alt="Shawn Mendes"/></a>
+                <div class="infos">
+                    <h2>Shawn Mendes</h2>
+                    <h4>L’Escalier</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- concert 2 -->
+            <article>
+                <img src="images/poprock/AngelOlsen.jpg" alt="Angel Olsen"/>
+                <div class="infos">
+                    <h2>Angel Olsen</h2>
+                    <h4>Barfly</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- concert 3 -->
+            <article>
+                <img src="images/poprock/BenjaminBiolay.jpg" alt="Benjamin Biolay"/>
+                <div class="infos">
+                    <h2>Benjamin Biolay</h2>
+                    <h4>Divan Orange</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- concert 4 -->
+            <article>
+                <img src="images/poprock/MarinaKaye.jpg" alt="Marina Kaye"/>
+                <div class="infos">
+                    <h2>Marina Kaye</h2>
+                    <h4>Café Campus</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- concert 5 -->
+            <article>
+                <img src="images/poprock/JimmyEatWorld.jpg" alt="Jimmy Eat World"/>
+                <div class="infos">
+                    <h2>Jimmy Eat World</h2>
+                    <h4>Le Velvet Speakeasy</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- concert 6 -->
+            <article>
+                <img src="images/poprock/BrunoMars.jpg" alt="Bruno Mars"/>
+                <div class="infos">
+                    <h2>Bruno Mars</h2>
+                    <h4>Olympia de Montreal</h4>
+                    <h4>Du 12/12/2016 au 23/12/2016</h4>
+                    <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti.
+                        Ut id felis accumsan, ultrices libero vel, porttitor nibh...</p>
+                    <a href="#">Plus de détails</a>
+                </div>
+            </article>
+
+        </section>
+        <!-- END liste concerts -->
+    </div>
+</main>
+
+<footer class="wrapper">
+    <p><a href="#">Nous contacter</a> | <a href="#">CGU</a> | © 2016 Sophie Seigneuret</p>
+    <div>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" alt="picto facebook"/></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.jpg" alt="picto twitter"/></a>
+        <a href="https://plus.google.com" target="_blank"><img src="images/google.jpg" alt="picto google plus"/></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" alt="picto linked in"/></a>
+    </div>
+    <p>Ce site a été réalisé dans le cadre d'un projet scolaire</p>
+</footer>
+
+<script type="text/javascript">
+    //menu mobile
+    jQuery(function ($) {
+        $('.menu-btn').click(function () {
+            $('.responsive-menu').toggleClass('expand')
+        })
+    })
+</script>
+
+</body>
+</html>

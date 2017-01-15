@@ -1,0 +1,1000 @@
+/*************************************************************************************************************************************/
+/*********************** RESET DESKTOP ***********************/
+/*************************************************************************************************************************************/
+/*@import 'https://fonts.googleapis.com/css?family=Lobster|Pacifico';*/
+
+*{
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, div {
+    display: block;
+}
+
+html {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+}
+
+/*************************************************************************************************************************************/
+/*********************** VERSION DESKTOP ***********************/
+/*************************************************************************************************************************************/
+
+
+/**** SYSTEME DE GRILLES ********************************************************************************************/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/** on aligne les colonnes les unes à côté des autres avec la propriété float **/
+[class*="col-"] {
+    float: left;
+    /*
+    padding: 0 15px;
+    */
+}
+
+/** chaque rangée de colonnes doit être enveloppée dans une div de class "row".
+    on applique un clear:both sur chaque row afin d'annuler l'effet de float
+    et éviter que les éléments suivants remontent et entourent le "row"**/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*END SYSTEME DE GRILLES*************************************************************************************/
+
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+}
+
+body {
+    background-color: #333333;;
+    /*max-width: 1600px;*/
+    margin: 0 auto;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*************************************************************************/
+/***  HEADER  ***/
+/*************************************************************************/
+header {
+    min-width: 500px;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* logo et menu en inline-block */
+header>a, header>div {
+    display: inline-block;
+}
+
+
+
+/*********** logo ************/
+header>a {
+    width: 30%;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 0 20px;
+}
+
+header>a img {
+    width: 100%;
+}
+
+
+
+
+/*********** menu ************/
+header .mobile-nav {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+
+}
+
+/* on cache le menu hamburger et le bouton du menu lateral */
+.menu-btn span, .menu-btn, #events>div input, #events aside label {
+display: none;
+}
+
+/* on enlève les marges du ul */
+header .responsive-menu ul {
+    padding: 0;
+    margin-left: 0;
+}
+
+
+header .responsive-menu li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+header .responsive-menu li a {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+header .responsive-menu li a:hover {
+    border-bottom: 3px solid #cda134;
+}
+
+/* lien actif menu principal */
+.active {
+    border-bottom: 3px solid #1e87a1;
+}
+
+
+
+
+/*********** input recherche ************/
+header form {
+    border: 1px solid #333333;
+    height: 35px;
+    margin: 0 20px;
+    position: absolute;
+    width: 60%;
+    top: 20px;
+    right: 0;
+}
+
+header input {
+    border: none;
+    float: left;
+    padding: 5px;
+    width: 80%;
+    vertical-align: top;
+}
+
+/* loupe */
+header form img {
+    float: right;
+    vertical-align: top;
+    padding: 5px;
+}
+
+
+
+/*************************************************************************/
+/***  CAROUSEL  ***/
+/*************************************************************************/
+@-webkit-keyframes slidy {
+    0% { left: 0%; }
+    15% { left: 0%; }
+    20% { left: -100%; }
+    35% { left: -100%; }
+    40% { left: -200%; }
+    55% { left: -200%; }
+    60% { left: -300%; }
+    75% { left: -300%; }
+    80% { left: -400%; }
+    100% { left: -400%; }
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    15% { left: 0%; }
+    20% { left: -100%; }
+    35% { left: -100%; }
+    40% { left: -200%; }
+    55% { left: -200%; }
+    60% { left: -300%; }
+    75% { left: -300%; }
+    80% { left: -400%; }
+    100% { left: -400%; }
+}
+
+body, figure {
+    margin: 0;
+    background: #101010;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 300;
+}
+
+div#carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
+}
+
+figure.slider img {
+    width: 100%;
+    height: auto;
+}
+
+figure.slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background: rgba(51, 51, 51, 0.75);
+    color: #fff;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: .6rem;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*************************************************************************/
+/***  MAIN  ***/
+/*************************************************************************/
+
+main {
+    min-width: 500px;
+    padding: 50px 0;
+}
+
+
+
+/*************************************************************************/
+/***  MAIN PAGE INDEX ***/
+/*************************************************************************/
+
+#accueil h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+#accueil>div>p {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+#accueil {
+    padding: 0;
+}
+
+/*********** section page index (patchwork photos) ************/
+#accueil section {
+    padding: 20px;
+}
+
+#accueil section div {
+    position: relative;
+}
+
+#populaire:hover .genre, #pop_rock:hover .genre, #latino:hover .genre, #populaire:hover .genre, #rnb:hover .genre, #soul_funk:hover .genre, #jazz:hover .genre, #rap_hip_hop:hover .genre, #electro:hover .genre {
+    display: block;
+    margin: 0;
+}
+
+.genre {
+    /*display: none;*/
+    position: absolute;
+    bottom:0;
+    margin-bottom: -60px;
+    padding-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(51, 51, 51, 0.76);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-transition: margin 0.5s;
+            transition: margin 0.5s;
+}
+
+#pop_rock, #latino, #populaire, #rnb, #soul_funk, #jazz, #rap_hip_hop, #electro {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+/* pop rock */
+#pop_rock {
+    height: 400px;
+    background-color: #00aff0;
+}
+#pop_rock img {
+    height: 100%;
+}
+
+/* latino */
+#latino {
+    height: 200px;
+    background-color: #f08c1c;
+}
+#latino img {
+    height: 100%;
+}
+
+/* populaire */
+#populaire {
+    height: 400px;
+    background-color: #319779;
+}
+#populaire img {
+    height: 100%;
+}
+
+/* rnb */
+#rnb {
+    height: 400px;
+    background-color: #cc4239;
+}
+#rnb img {
+    height: 100%;
+}
+
+/* soul funk */
+#soul_funk {
+    height: 200px;
+    background-color: #c0a640;
+}
+#soul_funk img {
+    height: 100%;
+}
+
+/* jazz */
+#jazz {
+    height: 400px;
+    background-color: #2b5977;
+}
+#jazz img {
+    height: 100%;
+}
+
+/* rap hip-hop */
+#rap_hip_hop {
+    height: 200px;
+    background-color: #c83ac5;
+}
+#rap_hip_hop img {
+    height: 100%;
+}
+
+/* electro */
+#electro {
+    height: 200px;
+    background-color: #b9bebe;
+}
+#electro img {
+    width: 100%;
+}
+
+
+
+
+/*************************************************************************/
+/***  MAIN PAGE ÉVÉNEMENTS ***/
+/*************************************************************************/
+
+/*********** titre "vos concerts..." ***********/
+#events h1 {
+    text-align: center;
+    color: #fff;
+    width: 96%;
+    background-color: #1e87a1;
+    line-height: 50px;
+    height: 50px;
+    margin: 0 auto 50px;
+    border-radius: 0 15px 0 15px;
+    text-transform: uppercase;
+}
+
+/*********** breadcrumb ***********/
+#events>p {
+    text-align: left;
+    margin-left: 20px;
+    color: #cda134;
+}
+
+#events>p a {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+/*********** menu lateral ***********/
+#events aside {
+    border-right: 1px solid #333333;
+    /*position: fixed;*/
+    /*left: -100%;*/
+}
+
+#events aside h2 {
+    margin: 0 0 20px 0;
+    background-color: #333333;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+#events aside ul {
+    padding-left: 30px;
+}
+
+#events aside li {
+    list-style-type: none;
+}
+
+#events aside a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+#events aside a:hover {
+    color: #1e87a1;
+}
+
+/* lien actif menu lateral */
+.active2 {
+    color: #1e87a1!important;
+}
+
+
+
+/*********** section artistes ***********/
+/* image album + infos artistes en inline-block */
+#events article img, #events article div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* image album */
+#events article img {
+    background-color: #333333;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    box-shadow: 4px 4px 6px rgba(51, 51, 51, 0.39);
+}
+
+/* bloc infos artistes */
+#events article div {
+    width: 57%;
+}
+
+/* separateur */
+#events hr {
+    margin: 20px 20px 20px 12px;
+    border-style: inset;
+}
+
+/* titres et texte artistes */
+#events article h2, #events article h4, #events article p {
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+
+/* lien "Plus de détails" */
+#events article div a {
+    display: inline-block;
+    text-decoration: none;
+    color: #cda134;
+    padding: 10px 0 0 15px;
+}
+
+
+
+
+
+
+
+/*************************************************************************/
+/***  FOOTER  ***/
+/*************************************************************************/
+footer.wrapper {
+    background-color: #1e87a1;
+}
+
+footer {
+    min-width: 500px;
+    padding: 20px 0;
+    height: 100px;
+    text-align: center;
+    /*position: relative;*/
+}
+
+footer a, footer p {
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer span {
+    color: #333333;
+    margin: 0 15px;
+}
+
+/* pictos ronds */
+footer img {
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+/* alignement du 1er paragraphe à gauche */
+footer p:first-of-type {
+    float: left;
+    margin: 10px 0 0 20px;
+}
+
+/* alignement des pictos à droite */
+footer div {
+    float: right;
+    margin-right: 20px;
+}
+
+/* 2ème paragraphe */
+footer p:last-of-type {
+    margin-top: 35px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+
+
+/*************************************************************************************************************************************/
+/*********************** VERSION TABLETTE ***********************/
+/*************************************************************************************************************************************/
+@media only screen and (max-width: 960px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    header .responsive-menu li a {
+        font-size: 1.1rem;
+    }
+
+    /******* section page index (patchwork photos) *******/
+    #pop_rock {
+        height: 200px;
+    }
+
+    #pop_rock img {
+        height: 282%;
+        position: absolute;
+        top: -180px;
+        left: -50px;
+    }
+
+    #latino {
+        height: 200px;
+    }
+
+    #populaire {
+        height: 400px;
+    }
+
+    #populaire img {
+        height: 182%;
+        position: absolute;
+        left: 0;
+        top: -40px;
+    }
+
+    #rnb {
+        height: 400px;
+    }
+
+    #soul_funk {
+        height: 200px;
+    }
+
+    #soul_funk img {
+        height: 120%;
+    }
+
+    #jazz {
+        height: 400px;
+    }
+
+    #rap_hip_hop {
+        height: 200px;
+    }
+
+    #electro {
+        height: 200px;
+    }
+
+    #populaire:hover .genre, #pop_rock:hover .genre, #latino:hover .genre, #populaire:hover .genre, #rnb:hover .genre, #soul_funk:hover .genre, #jazz:hover .genre, #rap_hip_hop:hover .genre, #electro:hover .genre {
+        margin-bottom: -60px;
+    }
+
+    .genre {
+        display: block;
+        bottom: 60px;
+        height: 40px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+/*************************************************************************************************************************************/
+/*********************** VERSION MOBILE ***********************/
+/*************************************************************************************************************************************/
+@media only screen and (max-width: 768px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    /*[class*="col-"] {*/
+    /*width: 100%;*/
+    .wrapper {
+        width: 100%;
+    }
+
+    header {
+        padding: 20px 0 80px;;
+    }
+
+    /******* menu hamburger *******/
+    header .mobile-nav {
+        position: absolute;
+        right: 20px;
+        top: 45px;
+        z-index: 99;
+    }
+
+    .menu-btn {
+        display: block;
+        padding: 2px 5px;
+        background-color: #1e87a1;
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        float: right;
+    }
+
+    .menu-btn span {
+        display: block;
+        width: 36px;
+        height: 7px;
+        border-radius: 5px;
+        margin: 8px 5px;
+        background-color: #ffffff;
+        z-index: 99;
+    }
+
+    header .responsive-menu ul {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    header .responsive-menu li {
+        display: block;
+        text-align: right;
+        width: 718px;
+        background-color: #1e87a1;
+        padding: 10px;
+    }
+
+    header .responsive-menu li a {
+        display: block;
+        margin-left: 0;
+        color: #fff;
+    }
+
+    header .responsive-menu li a:hover {
+        border: none;
+        color: #333333;
+    }
+
+    .responsive-menu {
+        display: none;
+    }
+
+    .expand {
+        display: block !important;
+    }
+
+    .active {
+        border-bottom: none;
+    }
+
+    /******* input recherche *******/
+    header form {
+        margin: 0 20px;
+        position: absolute;
+        width: 90%;
+        top: 120px;
+        right: 0;
+        background-color: #fff;
+    }
+
+    /******* section page index (patchwork photos)  *******/
+    #pop_rock {
+        height: 200px;
+    }
+
+    #latino {
+        height: 200px;
+    }
+
+    #latino img {
+        height: 100%;
+    }
+
+    #latino img {
+        height: 120%;
+    }
+
+    #populaire {
+        height: 200px;
+    }
+
+    #rnb {
+        height: 200px;
+    }
+
+    #rnb img {
+        height: 250%;
+        position: absolute;
+        left: 0;
+        top: -70px;
+    }
+
+    #soul_funk {
+        height: 200px;
+    }
+
+    #jazz {
+        height: 200px;
+    }
+
+    #jazz img {
+        height: 182%;
+    }
+
+    #rap_hip_hop {
+        height: 200px;
+    }
+
+    #rap_hip_hop img {
+        height: 165%;
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    #electro {
+        height: 200px;
+    }
+
+    /******* aside *******/
+    #events aside {
+        position: fixed;
+        top: 155px;
+        left: -88%;
+        border-right: none;
+        -webkit-transition: margin-left 1s;
+        transition: margin-left 1s;
+    }
+
+    #events aside > div {
+        position: relative;
+        background-color: #fff;
+        margin-left: 0;
+        width: 90%;
+        border-right: 20px solid #333333;
+        box-shadow: 2px 2px 0 #fff;
+    }
+
+    /* bouton du le menu lateral */
+    #events aside label {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #333333;
+        box-shadow: 2px 2px 0 #fff;
+        color: #fff;
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 43px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        left: 103%;
+    }
+
+    /* le menu lateral apparait de gauche lorsqu'on clique sur le bouton */
+    #menu:checked ~ aside {
+        margin-left: 88%;
+    }
+
+    #events aside ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    #events aside a {
+        color: #333333;
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+
+    #events aside a:hover {
+        display: block;
+        color: #fff !important;
+        background-color: #1e87a1;
+    }
+
+    /* lien actif menu lateral */
+    .active2 {
+        color: #cda134 !important;
+    }
+
+    /******* partie artistes *******/
+    #events article img {
+        width: 30%;
+        height: 30%;
+        max-width: 200px;
+    }
+
+    #events article div {
+        width: 66%;
+    }
+
+    /******* footer *******/
+    footer {
+        height: 180px;
+    }
+
+    footer div {
+        margin: 20px 0 0;
+    }
+
+    footer p:first-of-type, footer div {
+        float: none;
+        display: block;
+    }
+
+    footer p:last-of-type {
+        margin: 20px 0 0;
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Concerts à Montréal</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="icon" type="image/gif" href="images/micro.gif"/>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+<header class="wrapper">
+    <a href="index.html"><img src="images/cam_logo.gif" alt="logo Concerts à Montréal" id="logo"/></a>
+
+    <!-- menu de navigation -->
+    <div class="mobile-nav">
+        <!-- menu hamburger -->
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- menu normal -->
+        <div class="responsive-menu">
+            <ul>
+                <li><a href="evenements.html">événements</a></li>
+                <li><a href="#">salles</a></li>
+                <li><a href="#">réservation</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form action="index.html">
+        <input type="search" name="research" id="research" value="" placeholder="événement, salle, artiste, genre...">
+        <img id="loupe" src="images/loupe.jpg" alt="loupe">
+    </form>
+</header>
+
+<main id="accueil">
+    <div id="carousel">
+        <!--carousel-->
+        <figure class="slider">
+            <figure>
+                <img src=images/carousel/BorneoJazz.jpg alt="Borneo Jazz"/>
+                <figcaption>Borneo Jazz</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carousel/U2.jpg" alt="U2"/>
+                <figcaption>U2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carousel/Gregory_Porter_Ben_Oncle_Soul.jpg" alt="Gregory Porter et Ben l'Oncle Soul">
+                <figcaption>Gregory Porter et Ben l'Oncle Soul</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carousel/CalleReal.jpg" alt="Calle Real">
+                <figcaption>Calle Real</figcaption>
+            </figure>
+            <figure>
+                <img src="images/carousel/JamesMorrison.jpg" alt="James Morrison">
+                <figcaption>James Morrison</figcaption>
+            </figure>
+        </figure>
+    </div>
+
+    <div class="wrapper">
+        <h1>Trouvez un concert près de chez vous&nbsp;!</h1>
+        <p>Cras sit amet mi ultrices, convallis tortor ut, congue orci. Suspendisse potenti. Ut id felis accumsan,
+            ultrices
+            libero vel, porttitor nibh. Nam quis arcu turpis. In ac auctor elit. Integer in consequat magna, et
+            tristique
+            nulla. Nulla congue sollicitudin dolor et facilisis. Nullam vel velit in sapien sodales placerat nec vel
+            dolor.
+            Curabitur facilisis risus id porttitor facilisis. Morbi rutrum vestibulum blandit. Nam sollicitudin mattis
+            nunc
+            quis tempor. Vivamus a leo odio. </p>
+
+        <section class="row">
+            <div class="row col-3 col-m-12 col-s-12">
+                <div class="row">
+                    <div id="pop_rock" class="col-12 col-m-6 col-s-6">
+                        <a href="evenements.html"><img src="images/accueil/BrunoMars3.jpg" alt="Pop Rock Bruno Mars"/>
+                        <h3 class="genre">Pop-Rock</h3></a>
+                    </div>
+                    <div id="soul_funk" class="col-12 col-m-6 col-s-6">
+                        <a href="soul.html"><img src="images/accueil/BenOncleSoul2.jpg" alt="Soul Funk Ben l'oncle Soul"/>
+                        <h3 class="genre">Soul-Funk</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-3 col-m-4 col-s-12">
+                <div class="row">
+                    <div id="latino" class="col-12 col-m-12 col-s-6">
+                        <a href="latino.html"><img src="images/accueil/Sierra.jpg" alt="Latino Sierra"/>
+                        <h3 class="genre">Latino</h3></a>
+                    </div>
+                    <div id="jazz" class="col-12 col-m-12 col-s-6">
+                        <a href="jazz.html"><img src="images/accueil/NorahJones.jpg" alt="Jazz Norah Jones"/>
+                        <h3 class="genre">Jazz</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-m-8 col-s-12">
+                <div class="row col-12 col-m-12 col-s-12">
+                    <div id="populaire" class="col-8 col-m-8 col-s-6">
+                        <a href="populaire.html"><img src="images/accueil/JulienDore2.jpg" alt="Populaire Julien Doré"/>
+                        <h3 class="genre">Populaire</h3></a>
+                    </div>
+                    <div id="rnb" class="col-4 col-m-4 col-s-6">
+                        <a href="evenements.html"><img src="images/accueil/Rihanna4.jpg" alt="RnB Rihanna"/>
+                        <h3 class="genre">RnB</h3></a>
+                    </div>
+                </div>
+                <div class="row col-12 col-m-12  col-s-12">
+                    <div id="rap_hip_hop" class="col-4 col-m-4 col-s-6">
+                        <a href="evenements.html"><img src="images/accueil/Booba2.jpg" alt="Rap Hip-Hop Booba"/>
+                        <h3 class="genre">Rap - Hip-Hop</h3></a>
+                    </div>
+                    <div id="electro" class="col-8 col-m-8 col-s-6">
+                        <a href="evenements.html"><img src="images/accueil/SanHolo.jpg" alt="Electro San Holo"/>
+                        <h3 class="genre">Electro</h3></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<footer class="wrapper">
+    <p><a href="#">Nous contacter</a> | <a href="#">CGU</a> | © 2016 Sophie Seigneuret</p>
+    <div>
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg" alt="picto facebook"/></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.jpg" alt="picto twitter"/></a>
+        <a href="https://plus.google.com" target="_blank"><img src="images/google.jpg" alt="picto google plus"/></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg" alt="picto linked in"/></a>
+    </div>
+    <p>Ce site a été réalisé dans le cadre d'un projet scolaire</p>
+</footer>
+
+<script type="text/javascript">
+    //menu mobile
+    jQuery(function ($) {
+        $('.menu-btn').click(function () {
+            $('.responsive-menu').toggleClass('expand')
+        })
+    })
+</script>
+
+</body>
+</html>
